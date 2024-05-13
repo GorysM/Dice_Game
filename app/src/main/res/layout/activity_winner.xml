@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".WinnerActivity">
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="396dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="220dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/humanWinText"
+        android:layout_width="114dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="153dp"
+        android:text="H wins: "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/winnerText"
+        app:layout_constraintEnd_toStartOf="@+id/compWinText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/compWinText"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="155dp"
+        android:text="C wins: "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/winnerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tryAgainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="99dp"
+        android:text="Try Again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="135dp"
+        android:text="Exit"
+        app:layout_constraintEnd_toStartOf="@+id/tryAgainBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winnerText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
